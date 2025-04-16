@@ -32,6 +32,7 @@ layout: default
     {% assign posts = site.posts | where: 'category', 'personal' %}
     {% for post in posts %}
       <h2>{{ post.title }}</h2>
+      <p>{{ post.date | date: "%B %d, %Y" }}</p>
       <div>{{ post.content }}</div>
       <hr/>
     {% endfor %}
