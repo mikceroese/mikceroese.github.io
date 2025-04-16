@@ -61,18 +61,19 @@ body {
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
   }
   
   .social-icon {
-    width: 22px;
-    height: 22px;
-    fill: #800040;
+    width: 30px;
+    height: 30px;
+    fill: #800040; /* dark pink */
     transition: transform 0.2s ease;
   }
   
   .social-icon:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
+  
   
