@@ -11,7 +11,7 @@ body {
   /* Sidebar 1 - Profile */
   .sidebar {
     width: 200px;
-    background-color: #f4c2d7; /* slightly darker pink */
+    background-color: #fac9dd; /* slightly darker pink */
     padding: 20px;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
   }
