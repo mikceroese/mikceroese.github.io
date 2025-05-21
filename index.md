@@ -4,9 +4,9 @@ layout: default
 
 <div class="content">
   <div class="tabs">
-    <button onclick="showTab('research')">Research</button>
-    <button onclick="showTab('resumee')">Resumee</button>
-    <button onclick="showTab('personal')">Personal</button>
+    <button class="tab" id="research_tab" onclick="showTab('research')">Research</button>
+    <button class="tab" id="resumee_tab" onclick="showTab('resumee')">Resumee</button>
+    <button class="tab" id="personal_tab" onclick="showTab('personal')">Personal</button>
   </div>
 
   <div id="research" class="tab-content">
@@ -42,5 +42,8 @@ layout: default
 function showTab(tabId) {
   document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
   document.getElementById(tabId).style.display = 'block';
+  document.querySelectorAll('.tab').forEach(t => t.style."background-color" = '#ffc0cb');
+  let buttonId = tabId+"_tab"
+  document.getElementById(buttonId).style."background-color" = '#f8e7c7';
 }
 </script>
