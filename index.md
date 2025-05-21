@@ -47,5 +47,5 @@ function showTab(tabId) {
   document.getElementById(buttonId).style.backgroundColor = '#f8e7c7';
 }
 
-showTab(research)
+showTab("research")
 </script>
