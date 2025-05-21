@@ -43,7 +43,9 @@ function showTab(tabId) {
   document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
   document.getElementById(tabId).style.display = 'block';
   document.querySelectorAll('.tab').forEach(t => t.style.backgroundColor = '#ffc0cb');
-  let buttonId = tabId+"_tab"
+  let buttonId = tabId+"_tab";
   document.getElementById(buttonId).style.backgroundColor = '#f8e7c7';
 }
+
+showTab(research)
 </script>
