@@ -19,7 +19,7 @@ body {
   /* Sidebar 2 - Bio */
   .sidebar-bio {
     width: 300px;
-    background-color: #fad7e9; /* lighter pink */
+    background-color: #f8e7c7;
     padding: 20px;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
   }
