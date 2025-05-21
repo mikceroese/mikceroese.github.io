@@ -42,8 +42,8 @@ layout: default
 function showTab(tabId) {
   document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
   document.getElementById(tabId).style.display = 'block';
-  document.querySelectorAll('.tab').forEach(t => t.style."background-color" = '#ffc0cb');
+  document.querySelectorAll('.tab').forEach(t => t.style.backgroundColor = '#ffc0cb');
   let buttonId = tabId+"_tab"
-  document.getElementById(buttonId).style."background-color" = '#f8e7c7';
+  document.getElementById(buttonId).style.backgroundColor = '#f8e7c7';
 }
 </script>
