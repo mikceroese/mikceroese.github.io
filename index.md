@@ -4,10 +4,22 @@ layout: default
 
 <div class="content">
   <div class="tabs">
+    <button class="tab" id="publications_tab" onclick="showTab('publications')">Publications</button>
     <button class="tab" id="research_tab" onclick="showTab('research')">Research</button>
     <button class="tab" id="resumee_tab" onclick="showTab('resumee')">Resumee</button>
     <button class="tab" id="personal_tab" onclick="showTab('personal')">Personal</button>
   </div>
+
+  <div id="publications" class="tab-content">
+    {% assign posts = site.posts | where: 'category', 'publicatios' %}
+    {% for post in posts %}
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.date | date: "%B %d, %Y" }}</p>
+      <div>{{ post.content }}</div>
+      <hr/>
+    {% endfor %}
+  </div>
+
 
   <div id="research" class="tab-content">
     {% assign posts = site.posts | where: 'category', 'research' %}
