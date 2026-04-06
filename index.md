@@ -11,7 +11,7 @@ layout: default
   </div>
 
   <div id="publications" class="tab-content">
-    {% assign posts = site.posts | where: 'category', 'publicatios' %}
+    {% assign posts = site.posts | where: 'category', 'publications' %}
     {% for post in posts %}
       <h2>{{ post.title }}</h2>
       <p>{{ post.date | date: "%B %d, %Y" }}</p>
