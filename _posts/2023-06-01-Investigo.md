@@ -1,6 +1,6 @@
 ---
 title: Junior Researcher at RoPeRT
-date: 2023-06-01
+date: 2025-06-01
 category: resumee
 ---
 
