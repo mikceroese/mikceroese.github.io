@@ -20,8 +20,7 @@ layout: default
     {% endfor %}
   </div>
 
-
-  <div id="research" class="tab-content">
+  <div id="research" class="tab-content" style="display:none;">
     {% assign posts = site.posts | where: 'category', 'research' %}
     {% for post in posts %}
       <h2>{{ post.title }}</h2>
@@ -59,5 +58,5 @@ function showTab(tabId) {
   document.getElementById(buttonId).style.backgroundColor = '#f8e7c7';
 }
 
-showTab("research")
+showTab("publications")
 </script>
